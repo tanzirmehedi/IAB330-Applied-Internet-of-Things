@@ -6,7 +6,8 @@ Tutor: Mr. Tao Liu (t24.liu@hdr.qut.edu.au)
 
 Tutor: Sk Tanzir Mehedi (s.tanzir@qut.edu.au)
 
-Environment Setup: 
+
+# Environment Setup: 
 
 Installing Python, PIP, and Jupyter Notebook on Ubuntu 24.04: 
 
