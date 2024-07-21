@@ -1,7 +1,9 @@
 # IAB330 Applied Internet of Things
 
 Unit Coordinator: A/Prof Sara Khalifa (sara.khalifa@qut.edu.au)
+
 Tutor: Mr. Tao Liu (t24.liu@hdr.qut.edu.au)
+
 Tutor: Sk Tanzir Mehedi (s.tanzir@qut.edu.au)
 
 Environment Setup: 
