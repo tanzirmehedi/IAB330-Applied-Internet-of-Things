@@ -1,4 +1,4 @@
-# IAB330-Applied-Internet-of-Things
+# IAB330 Applied Internet of Things
 
 Environment Setup: 
 
