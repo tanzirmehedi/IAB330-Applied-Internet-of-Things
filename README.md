@@ -1,6 +1,13 @@
 # IAB330 Applied Internet of Things
 
-Environment Setup: 
+Unit Coordinator: A/Prof Sara Khalifa (sara.khalifa@qut.edu.au)
+
+Tutor: Mr. Tao Liu (t24.liu@hdr.qut.edu.au)
+
+Tutor: Sk Tanzir Mehedi (s.tanzir@qut.edu.au)
+
+
+# Environment Setup: 
 
 Installing Python, PIP, and Jupyter Notebook on Ubuntu 24.04: 
 
