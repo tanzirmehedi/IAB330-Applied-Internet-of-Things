@@ -7,11 +7,11 @@ Tutor: Mr. Tao Liu (t24.liu@hdr.qut.edu.au)
 Tutor: Sk Tanzir Mehedi (s.tanzir@qut.edu.au)
 
 
-# Environment Setup for Ubuntu: 
+# Environment Setup for Ubuntu
 
-Installing Python, PIP, and Jupyter Notebook on Ubuntu 24.04: 
+Installing Python, PIP, and Jupyter Notebook on Ubuntu 24.04
 
-# Installing Python
+## Installing Python
 
 Step 1: Install Python 3
 ~~~
@@ -20,7 +20,7 @@ sudo apt install python3
 python3 --version
 ~~~
 
-# Installing PIP
+## Installing PIP
 
 Step 1: Install pip
 
@@ -35,7 +35,7 @@ Upgrade pip (Optional)
 pip3 install --upgrade pip
 ~~~
 
-# Installing Jupyter Notebook
+## Installing Jupyter Notebook
 
 Step 1: Install Jupyter Notebook
 
@@ -58,9 +58,7 @@ http://{your-ip}:8888/
 Now, you should see the Jupyter Notebook interface, where you can create new notebooks, open existing notebooks, or manage your files.
 
 
-
-
-# Some Solution, If You are Facing Python3-xyz Type Error 
+## Some Solution, If You are Facing Python3-xyz Type Error 
 
 
 1. Install the Python package using APT:
@@ -72,7 +70,6 @@ sudo apt install python3-requests
 ~~~
 
 This will install this library system-wide.
-
 
 
 2. Use pipx:
@@ -89,7 +86,6 @@ pipx ensurepath
 ~~~
 
 
-
 3. In a terminal, delete this file with:
 
 ~~~
@@ -98,17 +94,21 @@ sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 
 and everything will be OK!
 
-################################################################################################################
 
-# Environment Setup for Windows: 
 
-Installing Python, PIP, and Jupyter Notebook on Windows
+###########################################################################################################
 
-Step 1. Download Python:
+# Environment Setup for Windows
+
+Installing Python, PIP, and Jupyter Notebook on Windows 11
+
+## Install Python
+
+Step 1. Download Python
    
 Download Python: https://www.python.org/downloads
 
-Step 2. Install Python:
+Step 2. Install Python
 
 Run the downloaded installer.
 Make sure to check the box that says Add Python to PATH before clicking the Install button.
@@ -116,7 +116,7 @@ Choose "Install Now" to proceed with the default settings.
 
 Step 3. Verify Python Installation
    
-Open Command Prompt and type:
+Open Command Prompt and type-
 
 ~~~
 python --version
@@ -125,7 +125,7 @@ python --version
 You should see the version of Python you installed.
 
 
-# Install PIP
+## Install PIP
 
 PIP is included with Python 3.4 and later, so it should be installed automatically. To verify PIP installation, open Command Prompt and type:
 ~~~
@@ -135,7 +135,7 @@ pip --version
 If it's not installed, you can download get-pip.py and install it manually:
 
 
-# Install Jupyter Notebook
+## Install Jupyter Notebook
 
 ~~~
 pip install jupyterlab
@@ -149,7 +149,7 @@ Now, go to Desktop, Create a folder “Test Jupyter ” open that folder. Once C
 jupyter notebook or python -m notebook
 ~~~
 
-# Troubleshooting:
+## Troubleshooting:
 
 Python not recognized: If Python isn't recognized, ensure it's added to your PATH. You can add it manually by going to System Properties -> Advanced -> Environment Variables, and adding the path to Python and Scripts to the PATH variable.
 
