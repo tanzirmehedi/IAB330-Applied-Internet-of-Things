@@ -7,7 +7,7 @@ Tutor: Mr. Tao Liu (t24.liu@hdr.qut.edu.au)
 Tutor: Sk Tanzir Mehedi (s.tanzir@qut.edu.au)
 
 
-# Environment Setup: 
+# Environment Setup for Ubuntu: 
 
 Installing Python, PIP, and Jupyter Notebook on Ubuntu 24.04: 
 
@@ -98,4 +98,64 @@ sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
 
 and everything will be OK!
 
+##########################################################################################
+
+# Environment Setup for Windows: 
+
+Installing Python, PIP, and Jupyter Notebook on Windows
+
+Step 1. Download Python:
+   
+Download Python: https://www.python.org/downloads
+
+Step 2. Install Python:
+
+Run the downloaded installer.
+Make sure to check the box that says Add Python to PATH before clicking the Install button.
+Choose "Install Now" to proceed with the default settings.
+
+Step 3. Verify Python Installation
+   
+Open Command Prompt and type:
+
+~~~
+python --version
+~~~
+
+You should see the version of Python you installed.
+
+
+# Install PIP
+
+PIP is included with Python 3.4 and later, so it should be installed automatically. To verify PIP installation, open Command Prompt and type:
+~~~
+pip --version
+~~~
+
+If it's not installed, you can download get-pip.py and install it manually:
+
+
+# Install Jupyter Notebook
+
+~~~
+pip install jupyterlab
+~~~
+~~~
+pip install jupyter notebook
+~~~
+
+Now, go to Desktop, Create a folder “Test Jupyter ” open that folder. Once CMD open, you just need to run command-
+~~~
+jupyter notebook or python -m notebook
+~~~
+
+# Troubleshooting:
+
+Python not recognized: If Python isn't recognized, ensure it's added to your PATH. You can add it manually by going to System Properties -> Advanced -> Environment Variables, and adding the path to Python and Scripts to the PATH variable.
+
+PIP not recognized: Similarly, ensure PIP is in your PATH.
+
+Jupyter not launching: Ensure that Jupyter is installed correctly and that no firewall or antivirus is blocking it.
+
+These steps should help you get Python, PIP, and Jupyter Notebook up and running on your Windows machine. If you encounter any specific issues or need further assistance, feel free to ask!
 
