@@ -159,3 +159,10 @@ Jupyter not launching: Ensure that Jupyter is installed correctly and that no fi
 
 These steps should help you get Python, PIP, and Jupyter Notebook up and running on your Windows machine. If you encounter any specific issues or need further assistance, feel free to ask!
 
+
+#####################################################################################
+
+# Environment Setup for Mac OS
+
+Link: https://www.dataquest.io/blog/installing-python-on-mac/ 
+
