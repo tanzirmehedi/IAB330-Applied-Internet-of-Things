@@ -1,8 +1,18 @@
+#####################
+
+Enalbe i2c: 
 sudo raspi-config
 
+#######################
+
+Update and Install necessary packages: 
 
 sudo apt-get update
 sudo apt-get install -y python3-smbus i2c-tools
 pip install adafruit-circuitpython-busdevice --break-system-package
 pip install adafruit-circuitpython-adxl34x --break-system-package
+
+##########################
+
+Configure Sensor with RPI and then run: 
 sudo i2cdetect -y 1
