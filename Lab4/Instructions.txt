@@ -1,0 +1,84 @@
+Windows: 
+
+###################################
+
+Install pymongo:
+
+	pip install pymongo
+
+ Verify the Installation:
+
+	python -c "import pymongo; print(pymongo.__version__)"
+
+
+Install dnspython:
+
+	pip install dnspython
+
+Verify Installation:
+
+	pip show dnspython
+
+
+
+
+Ubuntu/Debian/PI OS/Kali: 
+
+#####################################
+
+sudo apt install python3-pymongo --break-system-package
+sudo apt install python3-dnspython --break-system-package
+
+
+
+
+Time Update: 
+
+#####################################
+
+Static Solution: 
+
+sudo date -s "12 AUG 2024 15:56:45 AEST" 
+
+#####################################
+
+Dynamic Solution: 
+
+Ensure NTP is Installed:
+
+On most Raspberry Pi OS installations, NTP should already be installed and running. You can check if it's installed and running with the following command:
+
+	timedatectl status
+
+
+Install NTP (if not installed):
+
+	sudo apt-get update
+	sudo apt-get install ntp
+         
+	Check status: 
+
+        	sudo systemctl status ntp
+
+        If not enable then: 
+
+		sudo systemctl enable ntp
+        	sudo systemctl start ntp
+
+Verify Time Synchronization: 
+
+	ntpq -p
+
+Configure Time Zone:
+
+        sudo raspi-config
+
+	In the raspi-config menu, navigate to Localization Options -> Timezone and select your time zone.
+
+Reboot the Raspberry Pi:
+
+	sudo reboot
+
+Check the Date and Time:
+
+	date
