@@ -166,10 +166,11 @@ These steps should help you get Python, PIP, and Jupyter Notebook up and running
 
 Link: https://www.dataquest.io/blog/installing-python-on-mac/ 
 
+#####################################################################################
 
-## Error: dpkg was interrupted, you must manually run 'sudo dpkg --configure -a' to correct the problem.
+# Error: dpkg was interrupted, you must manually run 'sudo dpkg --configure -a' to correct the problem.
 
-Run the Commands: 
+## Run the Commands: 
 
 ~~~
 sudo dpkg --configure -a
