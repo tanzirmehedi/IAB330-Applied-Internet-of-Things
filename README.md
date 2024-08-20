@@ -168,7 +168,7 @@ Link: https://www.dataquest.io/blog/installing-python-on-mac/
 
 #####################################################################################
 
-# Error: dpkg was interrupted, you must manually run 'sudo dpkg --configure -a' to correct the problem.
+# Solution, if you are facing Error: dpkg was interrupted, you must manually run 'sudo dpkg --configure -a' to correct the problem
 
 ## Run the Commands: 
 
