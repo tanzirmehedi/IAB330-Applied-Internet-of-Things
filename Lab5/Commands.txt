@@ -1,0 +1,9 @@
+
+Install matplotlib:
+
+sudo apt install python3-matplotlib
+
+
+Install numpy:
+
+sudo apt install python3-numpy
