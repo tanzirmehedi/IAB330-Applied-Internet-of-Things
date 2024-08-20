@@ -4,7 +4,7 @@ Unit Coordinator: A/Prof Sara Khalifa (sara.khalifa@qut.edu.au)
 
 Tutor: Mr. Tao Liu (t24.liu@hdr.qut.edu.au)
 
-Tutor: Sk Tanzir Mehedi (s.tanzir@qut.edu.au)
+Tutor: Mr. Sk Tanzir Mehedi (s.tanzir@qut.edu.au)
 
 
 # Environment Setup for Ubuntu
@@ -165,4 +165,22 @@ These steps should help you get Python, PIP, and Jupyter Notebook up and running
 # Environment Setup for Mac OS
 
 Link: https://www.dataquest.io/blog/installing-python-on-mac/ 
+
+
+## Error: dpkg was interrupted, you must manually run 'sudo dpkg --configure -a' to correct the problem.
+
+Run the Commands: 
+
+~~~
+sudo dpkg --configure -a
+~~~
+
+~~~
+sudo apt-get update
+sudo apt-get upgrade
+~~~
+
+~~~
+sudo reboot
+~~~
 
