@@ -1,38 +1,12 @@
-Windows: 
-
-###################################
-
-Install pymongo:
-
-	pip install pymongo
-
- Verify the Installation:
-
-	python -c "import pymongo; print(pymongo.__version__)"
-
-
-Install dnspython:
-
-	pip install dnspython
-
-Verify Installation:
-
-	pip show dnspython
-
-
-
-
 Ubuntu/Debian/PI OS/Kali: 
 
 #####################################
 
-sudo apt install python3-pymongo --break-system-package
-sudo apt install python3-dnspython --break-system-package
+sudo apt install python3-pymongo
+sudo apt install python3-dnspython
 
 
-
-
-Time Update: 
+Time Update (if necessary): 
 
 #####################################
 
