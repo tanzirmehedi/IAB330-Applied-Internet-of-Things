@@ -1,9 +1,39 @@
 
+###########################################################
+
+Steps to Increase Swap Memory on Raspberry Pi:
+
+Check the Current Swap Size:
+
+         udo swapon --show
+
+Modify the Swap Configuration:
+
+          sudo nano /etc/dphys-swapfile
+
+Set the New Swap Size:
+
+          CONF_SWAPSIZE=500
+
+Restart the Swap Service:
+
+        sudo systemctl restart dphys-swapfile
+
+Verify the New Swap Size:
+
+       sudo swapon --show
+
+
+###########################################################
+
 Install matplotlib:
 
 Note**: Turn off Respberry Pi VNC (VNC uses too much memory and will freeze during installation. Please execute it over SSH.
 
 sudo apt install python3-matplotlib
+
+
+###########################################################
 
 Install numpy:
 
