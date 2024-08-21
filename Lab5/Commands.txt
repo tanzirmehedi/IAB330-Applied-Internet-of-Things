@@ -28,8 +28,6 @@ Verify the New Swap Size:
 
 Install matplotlib:
 
-Note**: Turn off Respberry Pi VNC (VNC uses too much memory and will freeze during installation. Please execute it over SSH.
-
 sudo apt install python3-matplotlib
 
 
