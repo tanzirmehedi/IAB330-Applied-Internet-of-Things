@@ -170,7 +170,7 @@ Link: https://www.dataquest.io/blog/installing-python-on-mac/
 
 # Solution: If you are facing Error: dpkg was interrupted
 
-## Run the Commands: 
+## After increasing the swap memory by at least 500 MB (see instructions in Workshop 5), run the commands: 
 
 ~~~
 sudo dpkg --configure -a
