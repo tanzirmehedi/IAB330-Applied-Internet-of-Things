@@ -5,15 +5,17 @@ Steps to Increase Swap Memory on Raspberry Pi:
 
 Check the Current Swap Size:
 
-         udo swapon --show
+         sudo swapon --show
+         OR
+         free-h
 
 Modify the Swap Configuration:
 
-          sudo nano /etc/dphys-swapfile
+         sudo nano /etc/dphys-swapfile
 
 Set the New Swap Size:
 
-          CONF_SWAPSIZE=500
+         CONF_SWAPSIZE=500
 
 Restart the Swap Service:
 
@@ -21,18 +23,21 @@ Restart the Swap Service:
 
 Verify the New Swap Size:
 
-       sudo swapon --show
+        sudo swapon --show 
+        OR
+        free-h
 
+Note: Remember to reboot your Pi for the new swap configuration to take effect.
 
 ###########################################################
 
 Install matplotlib:
 
-sudo apt install python3-matplotlib
+         sudo apt install python3-matplotlib
 
 
 ###########################################################
 
 Install numpy:
 
-sudo apt install python3-numpy
+         sudo apt install python3-numpy
