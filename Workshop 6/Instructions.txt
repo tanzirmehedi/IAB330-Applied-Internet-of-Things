@@ -1,0 +1,13 @@
+Install in LOCAL PC:
+
+Notebook:
+
+pip install notebook
+
+
+
+Install Matplotlib and Scikit-learn:
+
+pip install pandas matplotlib scikit-learn
+
+
