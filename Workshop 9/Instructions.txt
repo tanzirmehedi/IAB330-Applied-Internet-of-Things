@@ -1,0 +1,23 @@
+
+Wi-Fi:
+
+Disables (blocks) the Wi-Fi on your syste: 
+
+	rfkill block wifi
+
+Re-enables (unblocks) the Wi-F:
+
+	rfkill unblock wifi
+
+
+Bluetooth:
+
+Open a terminal and enter bluetoothctl to start the Bluetooth command-line interface:
+	
+	sudo bluetoothctl
+
+Once inside the bluetoothctl shell, turn on scanning to discover nearby Bluetooth devices:
+
+	scan on
+
+	scan off
