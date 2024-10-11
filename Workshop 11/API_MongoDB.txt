@@ -1,0 +1,55 @@
+import requests
+import json
+import pandas as pd
+
+# MongoDB API request details
+url = "P"
+
+headers = {
+    'Content-Type': 'application/json',
+    'Access-Control-Request-Headers': '*',
+    'api-key': 'P',
+}
+
+# Initialize variables for pagination
+all_documents = []
+batch_size = 1000
+skip = 0
+has_more_data = True
+
+# Fetch data in batches until no more data is returned
+while has_more_data:
+    payload = json.dumps({
+        "collection": "P",    
+        "database": "P",
+        "dataSource": "P",
+        "projection": {
+            "_id": 1,
+            "P": 1,
+            "P": 1
+        },
+        "limit": batch_size,
+        "skip": skip
+    })
+    
+    response = requests.post(url, headers=headers, data=payload)
+    data = response.json()
+
+    # Check if documents are returned in the response
+    if 'documents' in data:
+        documents = data['documents']
+        all_documents.extend(documents)
+        
+        # If fewer documents than the batch size are returned, no more data to fetch
+        if len(documents) < batch_size:
+            has_more_data = False
+        
+        # Update skip to get the next batch
+        skip += len(documents)
+    else:
+        has_more_data = False
+
+# Load all the collected data into a dataframe
+df = pd.json_normalize(all_documents)
+
+df
