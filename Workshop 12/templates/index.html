@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Activity Prediction</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #333;
+        }
+
+        /* Container Styling */
+        .container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #4facfe;
+        }
+
+        /* Prediction Text Styling */
+        #prediction {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: #f1f1f1;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+    <script>
+        // JavaScript to fetch predictions and update UI
+        function fetchPrediction() {
+            fetch('/prediction')
+                .then(response => response.json())
+                .then(data => {
+                    const predictionElement = document.getElementById("prediction");
+                    predictionElement.innerText = "Prediction: " + data.prediction;
+
+                    // Change background color based on prediction
+                    if (data.prediction === "Walking") {
+                        predictionElement.style.backgroundColor = "#d4edda";
+                        predictionElement.style.color = "#155724";
+                    } else if (data.prediction === "Sitting") {
+                        predictionElement.style.backgroundColor = "#f8d7da";
+                        predictionElement.style.color = "#721c24";
+                    } else {
+                        predictionElement.style.backgroundColor = "#fff3cd";
+                        predictionElement.style.color = "#856404";
+                    }
+                });
+        }
+
+        // Fetch prediction every 5 seconds
+        setInterval(fetchPrediction, 1000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Activity Prediction</h1>
+        <p id="prediction">Waiting for prediction...</p>
+    </div>
+</body>
+</html>
